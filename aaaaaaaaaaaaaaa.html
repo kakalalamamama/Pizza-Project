@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+        h1 {text-align: center;}
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIZZAIOLO</title>
+    
+    <link rel="stylesheet" href="aaaaaaaaaaaaaaa.css">
+</head>
+
+<body>
+    
+    <section class="header">
+        
+        <div class=" container">
+            <div class="navbar">
+                <div class = "logo">
+                    <img src="image/logo1.png" width="105px">
+                </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>   
+                    <li><a href="abount.html">About</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html">
+                <img src="image/cartwhite.png" width="25px" height="25px">
+            </a>
+
+                
+            </div>
+        </div>
+        <div class="fanta-page">
+        <div class="center">
+        <img src="drinks/fanta.png" width="120px" >
+        </div>
+
+        
+      
+        <h1 class="page-title">Orange Fanta 355mL.</h1>
+        <h1 class="descrip">Immerse yourself in the symphony of orange refreshment that only Orange 
+            Fanta can provide. The bold and bright citrus notes dance on your taste buds, 
+            creating an atmosphere of joy and excitement with every sip.
+
+        </h1>
+
+<!-----------
+        <h1 class="add">Add on</h1><div class="add-on">
+            <input type="checkbox" id="extra" data-price="149">
+            <label for="extra"> + 6 pcs.                                      +149</label><br>
+
+            <input type="checkbox" id="extra1" data-price="259">
+            <label for="extra1"> + 12 pcs.                                     +259</label><br>
+
+
+        </div>
+        --------------->
+
+
+        <h1 class="quan">Quantity</h1>
+
+
+
+        <div class="quantity-container">
+            <button onclick="decreaseQuantity() " id="decrement" >-</button>
+            <input type="text" id="quantity" class="quantity-input" value="1" readonly>
+            <button onclick="increaseQuantity()" id="increment">+</button>
+        </div>
+
+
+
+        <h1 class="total-price">Total Price: <span id="total-price">39</span>฿</h1>
+
+
+
+        <div class="cart-container">
+            <form class="cart-form">
+                
+                
+                <div class="button-container">
+                    <button class="cart-button">Add to cart</button>
+        </div>
+
+
+        <script>
+            let quantityInput = document.getElementById('quantity');
+            let totalPriceElement = document.getElementById('total-price');
+            let basePrice = 39;
+            let currentQuantity = 1;
+        
+            // Add event listeners to all checkboxes
+            let checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', updateTotalPrice);
+            });
+        
+            function increaseQuantity() {
+                currentQuantity++;
+                updateQuantity();
+            }
+        
+            function decreaseQuantity() {
+                if (currentQuantity > 1) {
+                    currentQuantity--;
+                    updateQuantity();
+                }
+            }
+        
+            function updateQuantity() {
+                quantityInput.value = currentQuantity;
+                updateTotalPrice();
+            }
+        
+            function updateTotalPrice() {
+                let selectedAddons = document.querySelectorAll('input[type="checkbox"]:checked');
+                let addonPrices = Array.from(selectedAddons).map(checkbox => parseInt(checkbox.dataset.price));
+                let totalAddonsPrice = addonPrices.reduce((total, price) => total + price, 0);
+        
+                let total = basePrice * currentQuantity + totalAddonsPrice;
+                totalPriceElement.textContent = total;
+            }
+            
+        </script>
+        
+        
+    </div>
+    
+    </section>
+</div>
+</body>
+</html>

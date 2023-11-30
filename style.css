@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(image/pizza.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-title {
+    font-size: 110px;
+    color: white;
+    font-family: Courier, monospace;
+    font-weight: 100; 
+}
+
+.button-container {
+    position: relative;
+    margin-top: 80px;
+}
+
+.login-button {
+    width: 200px;
+    padding: 15px;
+    padding-left: 21px;
+    padding-right: 21px;
+    font-size: 25px;
+    margin: 10px; /* Set the margin to the same value for both buttons */
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+
+.signup-button {
+    width: 200px;
+    padding: 15px;
+
+    font-size: 25px;
+    margin: 10px; /* Set the margin to the same value for both buttons */
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.login-button:hover,
+.signup-button:hover {
+    background-color: #e0e0e0;
+}

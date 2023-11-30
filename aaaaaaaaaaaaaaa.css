@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+
+}
+
+.fanta-page{
+    padding:50px 0;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(image/pizza.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 77.9vh;
+    width: 100%;
+}
+
+.page-title{
+    
+    font-size: 33px;
+    color: white;
+    font-family: Courier, monospace;
+    font-weight: 3000;
+    margin-top: 70px;
+
+
+}
+
+.center {
+    display: block;
+    margin-left: 930px;
+
+    width: 50%;
+  }
+.descrip{
+    font-size: 16px;
+    color: white;
+    font-family: Courier, monospace;
+    font-weight: 100;
+    margin-top: 35px;
+    padding-left: 250px; 
+    padding-right: 250px;
+
+}
+
+.add{
+    font-size: 20px;
+    color: white;
+    font-family: Courier, monospace;
+    font-weight: 3000;
+    margin-top: 35px;
+    padding-right: 410px;
+}
+
+#extra {
+    margin-top: 30px;
+    margin-left: 760px; /* Adjust the margin as needed */
+}
+
+
+#extra1 {
+    margin-top: 18px;
+    margin-left: 760px; /* Adjust the margin as needed */
+
+}
+#extra2 {
+    margin-top: 18px;
+    margin-left: 760px; /* Adjust the margin as needed */
+
+}
+#extra3 {
+    margin-top: 18px;
+    margin-left: 760px; /* Adjust the margin as needed */
+
+}
+#extra4 {
+    margin-top: 18px;
+    margin-left: 760px; /* Adjust the margin as needed */
+
+}
+label {
+    
+    font-size: 16px;
+    color: white;
+    font-family: Courier, monospace;
+    font-weight: 100;
+    white-space: pre;
+}
+
+.quan{
+    font-size: 20px;
+    color: white;
+    font-family: Courier, monospace;
+    font-weight: 3000;
+    margin-top: 85px;
+    
+    padding-right: 390px;
+}
+
+.total-price{
+    font-size: 25px;
+    color: white;
+    font-family: Courier, monospace;
+    font-weight: 3000;
+    margin-top: 60px;
+    padding-left: 250px; 
+    padding-right: 250px;
+}
+
+.quantity-container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-top: -10px;
+    left: 60%;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+  
+    box-shadow: 0 10px 20px rgba(4, 9, 30, 0.7); 
+}
+
+
+
+
+
+input[type="text"]{
+
+    text-align: center;
+    font-size: 16px;
+    border:none;
+    background-color: #ffffff;
+    color:black 
+}
+
+
+
+button{
+    color: black;
+    background-color: white;
+    border:none;
+    font-size: 18px;
+    cursor:pointer;
+    
+}
+
+#increment{
+    padding: 15px 25px 15px 0px;
+
+}
+
+#decrement{
+    padding: 15px 0px 15px 25px;
+
+}
+
+
+
+
+.cart-form {
+    max-width: 300px; /* Adjust the width of the form container */
+    margin: 0 auto;
+    padding-left: 160px; 
+
+}
+
+
+.cart-button {
+    
+    padding: 10px 25px;
+    font-size: 20px; /* Adjust the font size of the button */
+    border: none;
+    border-radius: 10px;
+    margin-top: 35px;
+    
+    
+}
+
+
+.cart-button:hover {
+    background-color: #e0e0e0;
+}
+
+
+
+
+.container{
+    max-width: 1900px;
+    margin: auto;
+    padding-left:25px;
+    padding-right: 25px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding:20px;
+}
+nav{
+    flex:1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration:none;
+    color:#ffffff;
+}
+
+.header .row{
+    margin-top:77px;
+}
+
+
+

@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(image/pizza.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+input {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px; /* Adjust the font size of the input fields */
+}
+
+.signup-button {
+    padding: 12px 22px;
+    font-size: 18px; /* Adjust the font size of the button */
+    border: none;
+    border-radius: 10px;
+    
+}
+
+.page-title {
+    font-size: 100px;
+    color: white;
+    font-family: Courier, monospace;
+    font-weight: 100;
+    margin-bottom: 40px;
+}
+
+.signup-button:hover {
+    background-color: #e0e0e0;
+}
